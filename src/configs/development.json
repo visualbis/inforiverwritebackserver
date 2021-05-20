@@ -1,0 +1,10 @@
+{
+    "env": "development",
+    "dbConfig": {
+        "host": "localhost",
+        "user": "root",
+        "password": "root",
+        "database": "csvtable"
+    },
+    "secretKey": "secretKey"
+}
