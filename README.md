@@ -33,6 +33,8 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     6.1.0
 
+### MySQL
+- #### Follow this documentation to install MySQL https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/
 ---
 
 ## Install
@@ -51,26 +53,35 @@ Open `src/configs/development.json` then add your MySql config.
 
 ### Example Config
 ```
-    "dbConfig": {
-        "host": "localhost",
-        "user": "root",
-        "password": "root",
-        "database": "table"
-    }
+"dbConfig": {
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "database": "databaseName"
+}
 ```
+
+### ENV
+Add a new file in the root directory with name `.env` and the following content 
+
+```
+PORT=3000
+```
+You can change the port to other open ports also
+
 ---
 ## Running the Build for production
 
     $ npm run start
 This command will start the application in production mode
-#A
-## Simple build for Dev
+
+# Simple build for Dev
 
     $ npm run dev
 ---
 ## Current Implementation
 
-Use the api `http://localhost:3000/postData` as the writeback url. This will parse the CSV and Put the values into the MySql DB
+Use the api `http://localhost:3000/postData` as the writeback url. This will parse the CSV and Put the values into the MySQL DB
 
 ---
 ## Upcoming Features
